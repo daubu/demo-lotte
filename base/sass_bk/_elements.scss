@@ -1,0 +1,353 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,vietnamese);
+
+@font-face {
+    font-family: 'sfu_futurabold';
+    src: url('fonts/sfufuturabold_0-webfont.eot');
+    src: url('fonts/sfufuturabold_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sfufuturabold_0-webfont.woff') format('woff'),
+         url('fonts/sfufuturabold_0-webfont.ttf') format('truetype'),
+         url('fonts/sfufuturabold_0-webfont.svg#sfu_futurabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sfu_futura_book';
+    src: url('fonts/sfufuturabook_0-webfont.eot');
+    src: url('fonts/sfufuturabook_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sfufuturabook_0-webfont.woff') format('woff'),
+         url('fonts/sfufuturabook_0-webfont.ttf') format('truetype'),
+         url('fonts/sfufuturabook_0-webfont.svg#sfu_futura_book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sfu_futuraheavy';
+    src: url('fonts/sfufuturaheavy_0-webfont.eot');
+    src: url('fonts/sfufuturaheavy_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sfufuturaheavy_0-webfont.woff') format('woff'),
+         url('fonts/sfufuturaheavy_0-webfont.ttf') format('truetype'),
+         url('fonts/sfufuturaheavy_0-webfont.svg#sfu_futuraheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {margin:0; padding:0;}
+body {
+	font-family: $font; 
+	color: $donker; 
+}
+a:link, a:visited{text-decoration:none;outline:none;}
+.fleft {float:left !important;}
+.fright {float:right !important;}
+a img{border:none;}
+.hide {display:none}
+.clearfix:after {
+	content:" "; 
+	display:block; 
+	height:0;
+	font-size:0; 
+	clear:both; 
+	visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* mac hide \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block;}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  text-rendering: optimizelegibility;
+  line-height:normal
+}
+h1 {font-size: 30px;}
+h2 {font-size: 24px;}
+h3 {font-size: 18px;}
+h4 {font-size: 14px;}
+h5 {font-size: 12px;}
+h6 {font-size: 11px;}
+
+*, *:before, *:after{ 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+} 
+
+
+input, textarea, select {font-family: $font; font-size: 14px;}
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    $red;
+    opacity: 1;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    $red;
+    opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    $red;
+    opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    $red;
+    opacity: 1;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{
+    color: transparent!important;
+    
+}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder{
+    color: transparent!important;
+}
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder{
+    color: transparent!important;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.wrapper {
+	width: 1260px;
+	margin: 0 auto;
+}
+
+#top {
+	position: relative;
+	z-index: 1000;
+	height: 47px;
+	background-color: $red;
+}
+#header {
+	position:relative; 
+	margin-top: -12px;
+	width: 100%;
+	z-index: 9;
+	.top {
+		margin-bottom: 25px;
+	}
+}
+#middle { 
+	clear: both;
+	position: relative; 
+	z-index: 20;
+}
+ 
+ 
+
+.social-icon {
+	float: right;
+	margin-left: 23px;
+	a {
+		background: url(../images/social-top.png) no-repeat scroll left top;
+	    display: inline-block;
+	    height: 19px; 
+	    text-indent: -9999px;
+	    width: 26px;
+	    &.gg {
+		    background-position: -29px 0;
+	    }
+	    &.tw {
+		    background-position: 100% 0;
+	    }
+	}
+}
+
+
+
+form.search {
+	background-color: #fff;
+	height: 28px;
+	overflow: hidden;
+	input[type="text"] {
+		width: 266px;
+		padding-left: 20px;
+		padding-right: 5px;
+		height: 28px;
+		color: $red;
+		border: none;
+		float: left
+	}
+	input[type="submit"] {
+		border: none;
+		background: url(../images/icon-find.png) center center no-repeat;
+		width: 28px;
+		height: 28px;
+		text-indent: -9999px;
+		float: right;
+	}
+}
+#footer {
+	overflow: hidden;
+	color: #fff;
+	margin-top: -1px;
+	clear: both;
+	a {
+		color: #fff;
+	}
+	.info-footer {
+		background: $red;
+		height: 220px;
+		padding-top: 30px;
+		.wrapper {
+			.box {
+				width: 295px;
+				min-height: 100px;
+				float: left;
+				margin-left: 26px;
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	.box {
+		h3.title-box {
+			font: normal 24px $font_b;
+			text-transform: uppercase;
+			border-bottom: #fff 1px solid;
+			padding-bottom: 18px;
+			margin-bottom: 10px;
+		}
+		&.box-01 {
+			h3.title-box { 
+				border-bottom: none;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.nav-footer {
+		overflow: hidden;
+		margin-left: -30px;
+		li {
+			float: left;
+			width: 132px;
+			margin-left: 30px;
+			border-top: #fff 1px solid;
+			a {
+				color: #fff;
+				font: normal 14px/30px $font;
+				height: 30px;
+				display: block;
+				&:hover {
+					color: $yellow;
+				}
+			}
+		}
+	}
+	.box-02 {
+		.ship {
+			background: url(../images/dat-hang.png) right top no-repeat;
+			font: 600 18px 'Open Sans', Arial;
+			min-height: 80px;
+			strong {
+				font: normal 29px  $font_b;
+			}
+			p {
+				margin-top: -4px;
+			}
+		}
+	}
+	.box-03 {
+		.member {
+			background: url(../images/thanh-vien.png) right top no-repeat;
+			min-height: 80px;
+			font-size: 14px;
+			line-height: 18px;
+			text-transform: uppercase;
+			padding-top: 5px;
+		}
+	}
+	.box-04 {
+		h3.title-box {  
+			margin-bottom: 30px;
+		}
+	}
+	.copy-footer {
+		height: 45px;
+		background: #f0f0f0;
+		font-size: 14px;
+		.copyright {
+			height: 45px;
+			line-height: 45px;
+			color: #1d1d1d;
+			float: left;
+			a {
+				color: #8d8c8a;
+				&:hover {
+					color: $red;
+				}
+			}
+		}
+	}
+	.insset-footer {
+		margin-top: 17px;
+		margin-right: 50px;
+		li {
+			float: left;
+			&:first-child {
+				a {
+					border-left: none;
+				}
+			}
+			a {
+				display: block;
+				padding: 0 14px;
+				color: #1d1d1d;
+				border-left: #1d1d1d 1px solid;
+				padding-bottom: 3px;
+				line-height: 12px;
+				&:hover {
+					color: $red;
+				}
+			}
+		}
+	}
+	.right-footer {
+		margin-top: 13px;
+		.icon {
+			background: url(../images/social.png) left top no-repeat;
+			display: inline-block; width: 22px;
+			height: 21px;
+			text-indent: -9999px;
+			text-align: left;
+			margin-left: 1px;
+			&.fb {
+				background-position: -61px 0;
+			}
+			&.yt {
+				background-position: 100% 0;
+			}
+			 
+			&.gp {
+				background-position: -92px 0;
+			}
+			&.pi {
+				background-position: -30px 0;
+			} 
+		}
+	}
+}
+
+.social-share {
+	a {
+		background: url(../images/share.png) left top no-repeat;
+		display: inline-block; 
+		width: 32px;
+		height: 32px;
+		text-indent: -9999px;
+		text-align: left;
+		margin-right: 5px;
+		&.tw {
+			background-position: -41px 0;
+		}
+		&.gg {
+			background-position: 100% 0;
+		}
+	}
+}
+ 

@@ -1,0 +1,95 @@
+
+#bxslider {
+	width: 100%;
+	&.slide-home {
+		height: 700px;
+	}
+	&.banner-page {
+		height: 280px;
+	}
+	&.slide-news {
+		height: 450px;
+	}
+}
+
+
+.anythingSlider ul li {
+	width: 100%;
+}
+.anythingSlider-default {
+    margin: 0 auto;
+    
+}
+
+.anythingSlider {
+    display: block;
+    overflow: visible !important;
+    position: relative;
+}
+.anythingSlider .anythingWindow {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.anythingSlider .anythingBase {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    left: 0;
+    list-style: none outside none;
+    margin: 0;
+    overflow: visible !important;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+.anythingSlider .arrow span {
+    display: block;
+    visibility: hidden;
+}
+.anythingSlider .arrow.disabled {
+    display: none;
+}
+.anythingSlider .panel {
+     
+    display: block;
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.anythingSlider .vertical .panel {
+    float: none;
+}
+.anythingSlider .fade .panel {
+    float: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.anythingSlider .fade .activePage {
+    z-index: 1;
+}
+.anythingSlider.rtl .anythingWindow {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+.anythingSlider.rtl .anythingControls ul {
+    float: left;
+}
+.anythingSlider.rtl .anythingControls ul a {
+    float: right;
+}
+.anythingSlider.rtl .start-stop {
+}
+.anythingSlider, .anythingSlider .anythingWindow, .anythingSlider .anythingControls ul a, .anythingSlider .arrow a, .anythingSlider .start-stop {
+    transition-duration: 0s;
+}
+
+
+.thumb-big .anythingControls {
+	display: block !important;
+}
+.anythingControls, .arrow, .start-stop {
+	display: none !important; 
+}

@@ -1,0 +1,126 @@
+ 
+ 
+.top-bar-section { 
+	position: relative;
+	width: 100%;
+	float: left;
+	z-index: 999;
+	> ul {
+	    text-align: center;
+	    display: block; 
+	    margin: 0; 
+	    > li {
+	    	display: inline-block;
+	    	vertical-align: top; 
+	    	height: 47px;  
+	    	border-left: #d6343a 1px solid;
+	    	&:hover, &.active {
+		    	a span.arr {
+			    	display: block;
+		    	}
+	    	}
+	    	> a {
+				color: #fff;
+				font: normal 16px/47px $font_h;
+				display: block;  
+				height: 47px;
+				padding: 0 20px;
+				position: relative;
+				&:hover {
+					color: #fee053;
+				}
+				i {
+					display: inline-block;
+				}
+				span.arr {
+					border-left: 10px solid transparent;
+				    border-right: 10px solid transparent;
+				    border-top: 10px solid $red;
+				    bottom: -10px;
+				    height: 0;
+				    left: 44%;
+				    position: absolute;
+				    width: 0;
+				    display: none;
+				}
+			}
+			&.logo, &.item06 {
+				border: none; 
+			}
+			&.logo a {
+				padding: 0 40px;
+			}
+			&.home {
+				border: none;
+				i { 
+					background: url(../images/i-home.png) left top no-repeat;
+					width: 20px;
+					height: 17px;
+				}
+			}
+			&.search {
+				i { 
+					background: url(../images/i-look.png) left top no-repeat;
+					width: 17px;
+					height: 17px;
+				}
+			}
+			&.cart {
+				i { 
+					background: url(../images/i-cart.png) left top no-repeat;
+					width: 23px;
+					height: 19px;
+					margin-right: 17px;
+				}
+			}
+			&:hover .hidden-sub {
+				display: block;
+			}
+			 
+		}
+		
+    }
+    
+     
+}
+#hidden-sub {
+    position: absolute;
+    left: 0;
+    top: 47px;
+    width: 100%; 
+    background: rgba(255, 255, 255, 0.94);
+    padding: 140px 0 75px;
+    display: none;
+    &.active {
+	    display: block;
+    }
+}
+    
+.sub-nav {
+	li {
+		float: left;
+		a {
+			display: block;
+			text-align: center;
+			color: #1e1e1e;
+			font: 700 16px $font_o;
+			text-transform: uppercase;
+			&:hover {
+				color: $red;
+			} 
+			span {
+				display: block;
+				&.thumb {
+					border-left: #f8f8f8 1px solid;
+					padding: 0 8px;
+				}
+				&.shadow {
+					margin-bottom: 5px;
+				}
+			}
+		}
+		&:first-child a span.thumb {
+			border-left: none;
+		}
+	} 
+}
