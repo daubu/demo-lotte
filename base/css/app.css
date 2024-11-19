@@ -721,10 +721,12 @@ form.search input[type="submit"] {
   width: 100%;
   overflow: hidden;
   position: relative;
+  min-height: calc(100vh - 85px);
 }
 .slider-wrap.cart-wrap {
   overflow: visible;
   margin-bottom: 30px;
+  min-height: auto;
 }
 
 .bx-controls {
@@ -732,7 +734,7 @@ form.search input[type="submit"] {
 }
 
 .slide-home li, .banner-page li {
-  min-height: 700px;
+  min-height: calc(100vh - 85px);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1651,9 +1653,15 @@ aside .slogan {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  min-height: calc(100vh - 85px);
+
+}
+.map-page iframe {
+  min-height: calc(100vh - 165px);
 }
 .wrap-page .wrap-page-inner {
   background: rgba(255, 191, 2, 0.8);
+  min-height: calc(100vh - 85px);
 }
 
 .page {
@@ -2259,6 +2267,8 @@ form.custom .custom.dropdown ul {
   margin: 0;
   overflow: hidden;
   padding: 0;
+   
+    
 }
 
 .anythingSlider .vertical .panel {
